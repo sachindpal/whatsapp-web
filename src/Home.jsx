@@ -26,6 +26,11 @@ function Home() {
          }
          wrapFunction();
     },[])
+    const sendMsgs = (event)=>{
+        if (event.keyCode == 13) {
+            sendMsg();
+        }
+    }
 
     const sendMsg = () => {
 
@@ -78,8 +83,8 @@ function Home() {
 })}
             </div>
             <div className='input-div'>
-                <input className='message' value={inputValue} name='message' onChange={(e) => setInputValue(e.target.value)} />
-                <button onClick={() => sendMsg()}>Send</button>
+                <input className='message' value={inputValue} name='message' onChange={(e) => setInputValue(e.target.value)} onKeyDown={(e)=>sendMsgs(e)} />
+                <button type='submit' onClick={() => sendMsg()}>Send</button>
             </div>
         </div>
     );

@@ -33,3 +33,7 @@ button{
   background-color: #ffff;
   background: transparent;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
