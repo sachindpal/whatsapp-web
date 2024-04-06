@@ -1,0 +1,35 @@
+.container{
+  background-image: url('./../public/images/backgoundWhatsapp.jpg');
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.input-div{
+  width: 95%;
+  border-width:1px;
+  border-style: solid;
+  border-color:grey;
+  position: fixed;
+  bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  right: 10px;
+  left: 10px;
+}
+
+.message{
+  width: 90%;
+  padding: 1%;
+  border: none;
+  background: transparent;
+
+}
+.message:focus{
+  outline:none;
+
+}
+button{
+  border: none;
+  background-color: #ffff;
+  background: transparent;
+}
